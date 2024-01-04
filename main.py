@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+	print("Printing out for observability purposes.")
     return jsonify({"Message": "Is this branch going to auto-build?"})
 
 
